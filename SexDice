@@ -1,0 +1,65 @@
+#Sex dice
+import random
+def mainF():
+ x = random.choice([1,2,3,4])
+ y = random.choice([1,2,3,4])
+ #Define Functions
+ def maleDice():
+	#Action
+	
+	
+	if x == 1:
+		a = "Lick "
+	elif   x == 2:
+		a = "Tickle "
+	elif  x == 3 :
+		a = "Kiss "
+	elif   x == 4:
+		a = "Massage "
+	#body part
+	
+	if y == 1:
+		b = "Neck"
+	elif  y == 2:
+		b = "Lips"
+	elif  y  == 3 :
+		b = "Thighs"
+	elif y == 4:
+		b = "Leg"
+	print a + b		
+ def girlDice():
+		#Action
+		
+		
+		if x == 1:
+			a = "Lick "
+		elif  x == 2:
+			a = "Tickle "
+		elif x == 3 :
+			a = "Kiss "
+		elif  x == 4:
+			a = "Massage "
+		#body part
+		
+		if y == 1:
+			b = "Dick"
+		elif y == 2:
+			b = "Lips"
+		elif y == 3:
+			b = "Cock"
+		elif y == 4:
+			b = "Cheek"
+		print a + b		
+							
+ gender = raw_input("Are you a guy or a girl?\n>\t")
+ if gender.lower() == "guy":
+	maleDice()
+ elif gender.lower() == "girl":
+ 	girlDice()
+ else:
+	print("Write either guy or girl, Jackass...")	
+ #Uncomment to see if application is working
+ #print x
+ #print y 
+for x in range(6969):
+	mainF()
