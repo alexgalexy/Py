@@ -7,7 +7,6 @@ def mainF():
  def maleDice():
 	#Action
 	
-	
 	if x == 1:
 		a = "Lick "
 	elif   x == 2:
