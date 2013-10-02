@@ -6,7 +6,6 @@ def mainF():
  #Define Functions
  def maleDice():
 	#Action
-	
 	if x == 1:
 		a = "Lick "
 	elif   x == 2:
@@ -27,9 +26,7 @@ def mainF():
 		b = "Leg"
 	print a + b		
  def girlDice():
-		#Action
-		
-		
+	#Action
 	if x == 1:
 		a = "Lick "
 	elif  x == 2:
