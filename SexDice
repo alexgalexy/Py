@@ -4,7 +4,10 @@ def mainF():
  x = random.choice([1,2,3,4])
  y = random.choice([1,2,3,4])
  #Define Functions
- def maleDice():
+ def guyClean():
+	
+	#Clean
+	
 	#Action
 	if x == 1:
 		a = "Lick "
@@ -25,7 +28,7 @@ def mainF():
 	elif y == 4:
 		b = "Leg"
 	print a + b		
- def girlDice():
+ def girlClean():
 	#Action
 	if x == 1:
 		a = "Lick "
@@ -36,24 +39,74 @@ def mainF():
 	elif  x == 4:
 		a = "Massage "
 		#body part
+	if y == 1:
+		b = "Neck"
+	elif y == 2:
+		b = "Lips"
+	elif y == 3:
+		b = "Thighs"
+	elif y == 4:
+		b = "Cheek"
+	print a + b		
+	
+	#Dirty
+	
+	
+ def guyDirty():
+ 	#Action
+	if x == 1:	
+		c = "Touch "
+	elif   x == 2:
+		c = "Tickle "
+	elif  x == 3 :
+		c = "Kiss "
+	elif   x == 4:
+		c = "Massage "
+	#body part
 		
+	if y == 1:
+		d = "Boobs"
+	elif  y == 2:
+		d = "Ass"
+	elif  y  == 3 :
+		d = "Lips"
+	elif y == 4:
+		d = "Vagina"
+	print c + d		
+ def girlDirty():
+	#Action
+	if x == 1:
+		a = "Lick "
+	elif  x == 2:
+		a = "Tickle "
+	elif x == 3 :
+		a = "Kiss "
+	elif  x == 4:
+		a = "Massage "
+		#body part
 	if y == 1:
 		b = "Dick"
 	elif y == 2:
 		b = "Lips"
 	elif y == 3:
-		b = "Cock"
+		b = "Thighs"
 	elif y == 4:
-		b = "Cheek"
-	print a + b		
-							
+		b = "Dick"
+	print a + b				
+ 
+
  gender = raw_input("Are you a guy or a girl?\n>\t")
- if gender.lower() == "guy":
-	maleDice()
- elif gender.lower() == "girl":
- 	girlDice()
+ state = raw_input("Clean or dirty?\n>\t")
+ if gender.lower() == "guy" and state.lower() == "clean":
+	guyClean()
+ elif gender.lower() == "guy" and state.lower() == "dirty":
+ 	guyDirty()
+ elif gender.lower() == "girl" and state.lower() == "clean":
+ 	girlClean()
+ elif gender.lower() == "girl" and state.lower() == "dirty":
+ 	girlDirty()
  else:
-	print("Write either guy or girl, Jackass...")	
+	print("Write either guy/girl and clean/dirty.")	
  #Uncomment to see if application is working
  #print x
  #print y 
