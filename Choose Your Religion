@@ -1,0 +1,30 @@
+print("Hello, looks like you want to join a religion.")
+print("Let's begin thing")
+first = input("How many gods do you want to worship?\n>1. Alot\t2. One. \t3. None.\n>>  ")
+if first.lower() == "alot":
+	second = input("Do you want to be reincarnated?\n>1.Yes\t2.No\n>>  ")
+	if second.lower() == "no": print("\nFollow the Mayan religion.")
+	elif second.lower() == "yes":
+		third = input("Do you own a black cat?\n>1.Yes\t2.No\n>>  ")
+		if third.lower() == "yes": print("\nBe a Wiccan.")
+		elif third.lower() == "no":
+			fourth = input("Do you prefer Indian takeout or Chinese takeout?\n>1.Indian\t2.Chinese\n>>  ")
+			if fourth.lower() == "indian": print("\nBe a Hindu.")
+			elif fourth.lower() == "chinese": print("\nBe a Buddhist.")
+elif first.lower() == "one":
+	second = input("How do you feel about bacon?\n>1.Meh\t2.Love.\n>>  ")
+	if second.lower() == "meh":
+		third = input("How do you feel about hummus?\n>1.Meh\t2.Love.\n>>  ")
+		if third.lower() == "meh": print("\nBe a Jew.")
+		elif third.lower() == "love": print("\nBe a Muslim.")
+	elif second.lower() == "love":
+		third = input("Are you a naturally annoying person?\n>1.Yes\t2.No\n>>  ")
+		if third.lower() == "no": print("\nBe a generic Christian.")
+		elif third.lower() == "yes": 
+			fourth = input("Do you think underwear can be magical?\n>1.Yes\t2.No\n>>  ")
+			if fourth.lower() == "yes": print("\nBe a Mormon.")
+			elif fourth.lower() ==	"no": print("\nBe a Jehovah's Witness.")
+elif first.lower() == "none":
+	second = input("Are you rich and insane?\n>1.Yes\t2.No\n>>  ")
+	if second.lower() == "no": print("\nBe an Athiest.")
+	elif second.lower() == "yes": print("\nBe a Scientologist.")
