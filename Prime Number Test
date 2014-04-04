@@ -1,0 +1,12 @@
+def prime(n):
+    for a in range(2,int(n**0.5)+1):
+        if n%a==0:
+            return False
+    return True
+for d in range(9999):
+	ask = input("Input a number to test if it's prime:\n>>\t")
+	if int(ask) > 1: break
+	
+x = prime(int(ask))
+if x is True: print("It's prime")
+else: print("It's not prime")
