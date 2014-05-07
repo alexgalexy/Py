@@ -1,0 +1,15 @@
+def m():
+	x0 = input("Give a value for x:\n>>\t")
+	y0 = input("Give a value for y:\n>>\t")
+	z0 = input("Give a value for z:\n>>\t")
+	n = input("To the power of what number (n > 2):\n>>\t")
+	while int(n) <= 2:
+		n = input("To the power of what number (n > 2):\n>>\t")
+	x = int(x0)**int(n)
+	y = int(y0)**int(n)
+	z = int(z0)**int(n)
+	a = x + y
+	print(a, " = ", z)
+	print("Fermet's Last Theorem always holds.")
+	
+m()
