@@ -1,0 +1,21 @@
+def factorial():
+	Input = "Text"
+	i = 1
+	fac = 1
+	while type(Input) == str:
+		try:
+		     Input = int(input("Enter something: "))       
+		except ValueError:
+		     print("Not an integer!")
+		     continue
+	fac = Input	
+	if Input == 0: print("1")
+	if Input < 0 : print("Can't ! a negative number") 
+	else:
+		while	i < Input:
+			fac = fac * i
+			i = i + 1
+		print(Input, " Returned ", fac)
+
+for index in range(999):
+	factorial()
